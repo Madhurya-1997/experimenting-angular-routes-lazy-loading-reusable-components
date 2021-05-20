@@ -1,0 +1,11 @@
+<app-divider>Statistics Component</app-divider>
+<div class="ui statistics">
+    <div *ngFor="let stat of data" class="statistic">
+        <div class="value">
+            {{stat.statValue}}
+        </div>
+        <div class="label">
+            {{stat.statLabel}}
+        </div>
+    </div>
+</div>

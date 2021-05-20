@@ -1,0 +1,19 @@
+<app-divider>
+    Item List Component
+</app-divider>
+
+<div class="ui items">
+    <div *ngFor="let item of itemList" class="item">
+        <div class="image">
+            <img src="{{item.itemImage}}">
+        </div>
+        <div class="content">
+            <a class="header">{{item.itemTitle}}</a>
+            <div class="description">
+                <p>
+                    {{item.itemDescription}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
